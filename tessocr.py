@@ -1,4 +1,4 @@
-''' image to text and text to voice '''
+''' Speech synthesizer for ocr output '''
 from PIL import Image
 import pytesseract as ts
 import requests
@@ -6,7 +6,7 @@ import os
 
 from gtts import gTTS
 
-url = "http://192.168.137.44:8080/shot.jpg"
+url = "http://192.168.111.44:8080/shot.jpg" #ip address of the IP CAM App
 
 def captureImg():
     img = requests.get(url).content
@@ -14,7 +14,7 @@ def captureImg():
         shot.write(img)
     
 def img2txt():
-    outText = ts.image_to_string(Image.open('/home/pi/Pictures/hackgr9/shot.jpg'), lang='eng')
+    outText = ts.image_to_string(Image.open('/home/pi/Pictures/shot.jpg'), lang='eng')
     print(outText)
     return(outText)
     
