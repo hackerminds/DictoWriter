@@ -11,9 +11,8 @@ Install Library
     
         sudo pip3 install PyAudio 
         
-
-> reference :
-> [https://raspberrypi.stackexchange.com](https://raspberrypi.stackexchange.com/questions/84666/problem-on-installing-pyaudio-on-raspberry-pi)
+        
+    
     > If the problem occur during installation in raspiberry Pi try this  If
     > your system is not "broken", you may be successful with this sequence:
     > 
@@ -43,9 +42,9 @@ Install Library
     > and attempts to deal "intelligently" with changed dependencies.
     > 
     > `sudo apt-get upgrade`  under no circumstances are currently installed
-    > packages removed, or packages not already installed retrieved and
-    > installed. This may be considered "safer" than  `dist-upgrade`, but
-    > not as effective in all cases.
+    > packages removed, or packages not already installed retrieved and installed. This may be considered "safer" than  `dist-upgrade`, but not as effective in all cases.
+    >
+    > [1]reference : [https://raspberrypi.stackexchange.com](https://raspberrypi.stackexchange.com/questions/84666/problem-on-installing-pyaudio-on-raspberry-pi)
  3. Python Serial Port Extension for Win32, OSX, Linux
     
         sudo pip3 install pyserial
@@ -68,6 +67,7 @@ Install Library
 
 Applications Used 
 ----
+*Android Smart Phone is Used as Camera*
 Download IP Camera from the Google Playstore
 [https://play.google.com/store/apps/details?id=com.pas.webcam](https://play.google.com/store/apps/details?id=com.pas.webcam)
 
@@ -75,6 +75,4 @@ Other
 ----
 *Board Used 1.4GHz 64-bit quad-core Broadcom Arm Cortex A53*
 *(Python 3 is used in this project)*
-
-
 
