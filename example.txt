@@ -1,4 +1,4 @@
-(example gcode created)
+(Example gcode created)
 (ABCDEFGHIJKLMNOPQRSTUVWXYZ)
 (A)
 N10 G0 Z2
