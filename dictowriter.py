@@ -1,9 +1,6 @@
-"Hackathon 2020"
-
 import os
 import time
 import threading
-#import s2t_v4 as s2t
 from gtts import gTTS
 #import tessocr
 import s2t
