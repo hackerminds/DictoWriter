@@ -9,7 +9,8 @@ Install Library
     > [https://pypi.org/project/SpeechRecognition/](https://pypi.org/project/SpeechRecognition/)
  2. Install Pyaudio 
     
-        sudo pip3 install PyAudio reference : [https://raspberrypi.stackexchange.com](https://raspberrypi.stackexchange.com/questions/84666/problem-on-installing-pyaudio-on-raspberry-pi)
+        sudo pip3 install PyAudio 
+reference : [https://raspberrypi.stackexchange.com](https://raspberrypi.stackexchange.com/questions/84666/problem-on-installing-pyaudio-on-raspberry-pi)
     
     > If the problem occur during installation in raspiberry Pi try this  If
     > your system is not "broken", you may be successful with this sequence:
