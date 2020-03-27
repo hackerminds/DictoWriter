@@ -6,8 +6,7 @@ This project is about building a mechanical prototype of a Speech to Text Plotte
 
 ## Install Pyaudio
 ```
-
-    sudo apt-get install portaudio19-dev 
-    sudo pip install pyaudio
-
+ sudo apt-get install portaudio19-dev 
+ sudo pip install pyaudio
+ 
 ```
