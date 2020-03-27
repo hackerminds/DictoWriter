@@ -1,3 +1,4 @@
+![https://badgen.net/github/last-commit/hackerminds/DICTO-WRITTER/](https://badgen.net/github/last-commit/hackerminds/DICTO-WRITTER)
 ![/github/commits/hackerminds/DICTO-WRITTER/](https://badgen.net/github/commits/hackerminds/DICTO-WRITTER/)
 
 # DICTO-WRITTER
