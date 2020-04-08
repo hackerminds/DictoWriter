@@ -17,7 +17,9 @@ myFontSize = 12
 icon_path = "E:\Visual_Studio_Code\python\GUI\Dicto-Writter_small.ico"
 captured_image_path = "E:\Visual_Studio_Code\python\GUI\Dicto-Writter_small.png"
 
-in_main = ""
+in_s2t_main = " ."
+
+in_t2s_main = " ."
 
 myHelp = "For Step by step help please refer the following link:\r\nHACKERMINDS/Dicto-Writter\r\n(https://github.com/hackerminds/DICTO-WRITTER)"
 
@@ -57,7 +59,7 @@ def s2t_frame():
         # showText.pack(fill="both", expand=True)
 
         showText = ScrollableFrame(textFrame)
-        Text = Label(showText.scrollable_frame, padx=10, pady=5, justify=LEFT,font=(myFont, myFontSize) ,text=in_main)
+        Text = Label(showText.scrollable_frame, padx=10, pady=5, justify=LEFT,font=(myFont, myFontSize) ,text=in_s2t_main)
         Text.pack(fill="both", expand=True)
         showText.pack(fill="both", expand=True)
 
@@ -135,7 +137,7 @@ def t2s_frame():
         textFrame.pack(fill="both", expand=True)
 
         showText = ScrollableFrame(textFrame)
-        Text = Label(showText.scrollable_frame, padx=10, pady=5, justify=LEFT,font=(myFont, myFontSize) ,text=in_main)
+        Text = Label(showText.scrollable_frame, padx=10, pady=5, justify=LEFT,font=(myFont, myFontSize) ,text=in_t2s_main)
         Text.pack(fill="both", expand=True)
         showText.pack(fill="both", expand=True)
 
