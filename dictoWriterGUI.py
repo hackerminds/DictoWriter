@@ -1,3 +1,6 @@
+import main as dw
+#import dictowritter as dw
+
 from tkinter import*
 from tkinter import messagebox
 try:
@@ -5,17 +8,17 @@ try:
 except:
     try:
         response = messagebox.askyesno("Import Error", "Do you want to install missing Library?")
-        # if response == "yes":
-        #     os.system("sudo pip3 install Pillow")
-        # else:
-        #     messagebox.askyesno("Import Error", "Did not install missing Library!")
+        if response == "yes":
+            os.system("sudo pip3 install Pillow")
+        else:
+            messagebox.askyesno("Import Error", "Did not install missing Library!")
     except:
         messagebox.showinfo("Import Error", "Please install pillow library!")
 
 myFont = "Courier"
 myFontSize = 12
-icon_path = "E:\Visual_Studio_Code\python\GUI\Dicto-Writter_small.ico"
-captured_image_path = "E:\Visual_Studio_Code\python\GUI\Dicto-Writter_small.png"
+
+captured_image_path = "./Dicto-Writter_small.png"
 
 in_s2t_main = " ."
 
@@ -47,21 +50,29 @@ class ScrollableFrame(Frame):
 
 
 def s2t_frame():
+    
     def startMechine():
         startButton.config(state=DISABLED)
         stopButton.config(state=NORMAL)
+        
+        # check for fedback option
         #print(checkButtonVar.get())
+        dw.ttsfeedback = checkButtonVar.get()
+
         textFrame = LabelFrame(MiddleFrame, font=(myFont, myFontSize) ,text="Conversion Output")
         textFrame.pack(fill="both", expand=True)
-
-        # showText = Text(textFrame, width=720, height=280, padx=10, wrap=WORD, spacing1=1, spacing2=1, spacing3=1)
-        # showText.insert(INSERT, "Text Widgetn20 characters widen3 lines high")#END or INSERT
-        # showText.pack(fill="both", expand=True)
-
+        
+        # send signal to main program and get the data 
+        dw.plotter_handler()
+        dw.main()
+        in_s2t_main = dw.newtext
+        
+        # show the transcripted text on GUI
         showText = ScrollableFrame(textFrame)
         Text = Label(showText.scrollable_frame, padx=10, pady=5, justify=LEFT,font=(myFont, myFontSize) ,text=in_s2t_main)
         Text.pack(fill="both", expand=True)
         showText.pack(fill="both", expand=True)
+        
 
     def stopMechine():
         startButton.config(state=NORMAL)
@@ -72,7 +83,6 @@ def s2t_frame():
     #s2t frame initialisation
     frame = Toplevel()
     frame.title("Speech to Text | Dicto Writter")
-    frame.iconbitmap(icon_path)
     frame.geometry("720x480")
 
     #Create Base Frame
@@ -86,7 +96,7 @@ def s2t_frame():
     TopFrame = Frame(MainFrame, bd=5, width=720, height=80, padx=2, relief=RIDGE)#, bg="#f0f0f0")
     TopFrame.pack(fill="both", expand=True)
 
-    # Check Box
+    # Check Box for feedback option
     checkButtonVar = StringVar()
     feedBackOption =Checkbutton(TopFrame, text="Feedback", variable=checkButtonVar, onvalue="On", offvalue="Off")
     feedBackOption.deselect()
@@ -117,7 +127,6 @@ def t2s_frame():
             render = ImageTk.PhotoImage(load)
             frame = Toplevel()
             frame.title("Captured Image | Dicto Writter")
-            frame.iconbitmap(icon_path)
             img = Label(frame, image=render)
             img.image = render
             img.place(x=0, y=0)
@@ -144,7 +153,6 @@ def t2s_frame():
     #t2s frame initialisation
     frame = Toplevel()
     frame.title("Text to Speech | Dicto Writter")
-    frame.iconbitmap(icon_path)
     frame.geometry("720x480")
 
     #Create Base Frame
@@ -178,7 +186,6 @@ def t2s_frame():
 def help_frame(option):
     frame = Toplevel()
     frame.title("Dicto Writter")
-    frame.iconbitmap(icon_path)
     frame.geometry("720x480")
     if option == 'help':
         #Create Main Frame for help
@@ -208,7 +215,6 @@ if __name__ == "__main__":
     # initialisation of tkinter
     root = Tk()
     root.title("Dicto Writter")
-    root.iconbitmap(icon_path)
     root.geometry("480x320")
 
     ''' Menu Options '''
