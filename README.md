@@ -154,3 +154,9 @@ Trick : https://learn.onemonth.com/automate-web-forms-with-python/
 
 #### UNIVERSAL GCODE SENDER
 https://youtu.be/u35L0jGCqFc
+
+
+#### SETUP FOR MECHANICAL BODY
+
+https://arnabkumardas.com/cnc.html
+
