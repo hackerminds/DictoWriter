@@ -62,7 +62,7 @@ Install Library
         sudo pip3 install pyserial
  
 
-# TEXT TO CNC CODE(GCODE)
+## TEXT TO CNC CODE(GCODE)
 To use a library that converts text to gcode FIXED : HF2GCODE IS BEST SOLUTION (CONFIRMED )
 ## Installation
 
