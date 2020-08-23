@@ -67,7 +67,6 @@ To use a library that converts text to gcode FIXED : HF2GCODE IS BEST SOLUTION (
 ## Installation
 
 ```
-wget https://github.com/hackerminds/Dicto_Writer/raw/master/hf.zip
 unzip hf.zip
 cd hf2gcode-master/src
 make # COMPILE THE C SOURCE CODE
