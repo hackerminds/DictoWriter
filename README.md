@@ -12,8 +12,6 @@ Install Library
     > requirments at
     > [https://pypi.org/project/SpeechRecognition/](https://pypi.org/project/SpeechRecognition/)
  2. Install Pyaudio 
-    
-        sudo pip3 install PyAudio 
         
      ## Install Pyaudio
      ```
