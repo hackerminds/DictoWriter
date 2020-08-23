@@ -28,7 +28,7 @@ scale = 0.3 # goes well with line yoffset drop of 10
 #scale = 0.25 # also tweak yoffset
 
 #font = "scriptc" #doble stroke
-font = "scripts"
+font = "scripts" #cursive 
 #font = "rowmans"
 
 cmd = "./h2g/src/hf2gcode" # ./prog -params "text"
