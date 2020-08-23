@@ -61,7 +61,25 @@ Install Library
     
         sudo pip3 install pyserial
  
- 
+
+# TEXT TO CNC CODE(GCODE)
+To use a library that converts text to gcode FIXED : HF2GCODE IS BEST SOLUTION (CONFIRMED )
+## Installation
+
+```
+wget https://github.com/hackerminds/Dicto_Writer/raw/master/hf.zip
+unzip hf.zip
+cd hf2gcode-master/src
+make # COMPILE THE C SOURCE CODE
+mv hf2gcode-master h2g # RENAME FOLDER
+```
+To test installed sucessfully 
+```
+cd h2g/src
+./hf2gcode -font "rowmans" -y 0 -x 0 -o text_to_write.gcd --min-gcode "Welcome to DictoWriter!"
+```
+SOURCE CODE : https://github.com/Andy1978/hf2gcode
+
 ### Go to the testing brach for more detail
  https://github.com/hackerminds/DICTO-WRITTER/tree/testing_branch
     ![https://badgen.net/github/last-commit/hackerminds/DICTO-WRITTER/](https://badgen.net/github/last-commit/hackerminds/DICTO-WRITTER)
