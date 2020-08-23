@@ -5,7 +5,8 @@ This project is about building a mechanical prototype of a Speech to Text Plotte
 Install Library
 ----
  1. 
- ## SpeechRecognition 3.8.1
+     
+     ## SpeechRecognition 3.8.1
     
         sudo pip3 install SpeechRecognition
     
@@ -55,10 +56,12 @@ Install Library
     >
     > [1]reference : [https://raspberrypi.stackexchange.com](https://raspberrypi.stackexchange.com/questions/84666/problem-on-installing-pyaudio-on-raspberry-pi)
  3. 
- ## Python Serial Port Extension for Win32, OSX, Linux
+     
+     ## Python Serial Port Extension for Win32, OSX, Linux
     
         sudo pip3 install pyserial
  
  
-### ![Go to the testing brach for more detail] (https://github.com/hackerminds/DICTO-WRITTER/tree/testing_branch)
-![https://badgen.net/github/last-commit/hackerminds/DICTO-WRITTER/](https://badgen.net/github/last-commit/hackerminds/DICTO-WRITTER)
+### Go to the testing brach for more detail
+ https://github.com/hackerminds/DICTO-WRITTER/tree/testing_branch
+    ![https://badgen.net/github/last-commit/hackerminds/DICTO-WRITTER/](https://badgen.net/github/last-commit/hackerminds/DICTO-WRITTER)
