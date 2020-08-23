@@ -17,8 +17,8 @@ Install Library
         
      ## Install Pyaudio
      ```
-        sudo apt-get install portaudio19-dev 
-        sudo pip install pyaudio
+    sudo apt-get install portaudio19-dev 
+    sudo pip install pyaudio
  
      ```
     
